@@ -1,0 +1,1 @@
+var gulp = require('gulp');var browserSync = require('browser-sync').create();gulp.task('server', function () {    browserSync.init({        port : 8080,        server : './app/www'    });    gulp.watch("./app/src/**/*.*",function (file) {        console.log(file.path+'====changed');        browserSync.reload();    });});

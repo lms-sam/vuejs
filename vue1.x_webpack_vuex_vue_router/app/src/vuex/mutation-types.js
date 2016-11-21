@@ -1,0 +1,1 @@
+export const RECIED_LIST = 'RECIED_LIST';
