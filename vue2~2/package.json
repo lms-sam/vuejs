@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node server",
-    "dev1": "webpack-dev-server --config webpack.config.dev.js --progress --profile --colors --hot --inline",
+    "dev": "webpack-dev-server --config webpack.config.dev.js --progress --profile --colors --hot --inline",
     "product": "webpack --colors --config bin/webpack.product.config.js --optimize-minimize",
     "start": "gulp server"
   },
@@ -42,6 +41,7 @@
     "html-webpack-plugin": "^2.24.1",
     "mint-ui": "^2.0.5",
     "node-sass": "^3.13.0",
+    "open-browser-webpack-plugin": "^0.0.3",
     "postcss-loader": "^1.1.1",
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
@@ -52,6 +52,7 @@
     "webpack": "^1.13.3"
   },
   "dependencies": {
+    "laravel-elixir-vue-2": "^0.3.0",
     "vue": "^2.0.7",
     "vue-resource": "^1.0.3",
     "vue-router": "^2.0.2",
