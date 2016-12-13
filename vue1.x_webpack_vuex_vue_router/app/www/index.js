@@ -10639,6 +10639,7 @@ webpackJsonp([4,3],[
 	    value: true
 	});
 	// <template>
+	//     {{msg}}
 	//     <router-view></router-view>
 	// </template>
 	// <style lang="scss">
@@ -10699,7 +10700,7 @@ webpackJsonp([4,3],[
 	
 	
 	// module
-	exports.push([module.id, "\n\n\n\n\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"app.vue","sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n\n\n\n\n\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"app.vue","sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -10991,7 +10992,7 @@ webpackJsonp([4,3],[
 /* 46 */
 /***/ function(module, exports) {
 
-	module.exports = "\n<router-view></router-view>\n";
+	module.exports = "\n{{msg}}\n<router-view></router-view>\n";
 
 /***/ },
 /* 47 */,

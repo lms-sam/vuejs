@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --watch --colors --config bin/webpack.dev.config.js",
+    "dev": "webpack-dev-server --config bin/webpack.dev.config.js --progress --profile --colors --hot --inline",
+    "dev1": "webpack --watch --colors --config bin/webpack.dev.config.js",
     "product": "webpack --colors --config bin/webpack.product.config.js --optimize-minimize",
     "start": "gulp server"
   },
