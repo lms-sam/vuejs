@@ -7,7 +7,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var OpenBrowserPlugin = require('open-browser-webpack-plugin');
 var CleanWebpackPlugin = require('clean-webpack-plugin');
 
-const publicPath = 'http://cxf.yinyuetai.com:8080/';
+const publicPath = 'http://test.yinyuetai.com:8080/';
 
 module.exports = {
     entry: {
@@ -16,7 +16,7 @@ module.exports = {
     },
     output: {
         path: path.join(__dirname, './build'),
-        filename: '[name].js',
+        filename: '[name].[hash].js',
         chunkFilename: '[name].[hash].js'
     },
     devServer: {
@@ -91,7 +91,7 @@ module.exports = {
         }
     },
     plugins: [
-        new ExtractTextPlugin('[name].css', {
+        new ExtractTextPlugin('[name].[hash].css', {
             allChunks: true
         }),
         new webpack.optimize.CommonsChunkPlugin('common', 'common.js'),
@@ -112,7 +112,7 @@ module.exports = {
 
 // 判断环境
 var prod = process.env.NODE_ENV === 'production';
-console.log(prod);
+// console.log(prod);
 module.exports.plugins = (module.exports.plugins || []);
 if (prod) {
     module.exports.devtool = 'source-map';

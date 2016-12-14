@@ -3,7 +3,7 @@ import Router from 'vue-router'
 
 Vue.use(Router);
 export default new Router({
-  mode: 'history',
+  mode: 'hash',
   scrollBehavior: () => ({ y: 0 }),
   routes: [
     { path: '/home',name:'home', component:home },

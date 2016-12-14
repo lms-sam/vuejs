@@ -1,4 +1,4 @@
-// import './styles/index.scss';
+import './styles/index.scss';
 
 import Vue from 'vue';
 import store from './vuex/store.js';

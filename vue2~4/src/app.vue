@@ -3,7 +3,7 @@
 <template>
 <div>
     <div class="">
-        首页吗
+        <a href="#">别问我为什么，就是吊</a>
     </div>
 	<router-view></router-view>
 </div>
